@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: lab1
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lab
+    username: test
+    password: test
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:/db/db.changelog-master.yaml
+    enabled: true
